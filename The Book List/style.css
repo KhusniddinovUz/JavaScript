@@ -1,0 +1,15 @@
+body {
+  font-family: "Source Code Pro";
+}
+.success,
+.error {
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+.success {
+  background: #008000;
+}
+.error {
+  background: #ff0000;
+}
