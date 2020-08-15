@@ -22,7 +22,6 @@
     <list default="true" id="ea96d9d3-53bf-4f55-bf05-3fc0165c00b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597472181789</updated>
-      <workItem from="1597472182832" duration="4076000" />
+      <workItem from="1597472182832" duration="5869000" />
     </task>
     <task id="LOCAL-00001" summary="style.css Added">
       <created>1597473125610</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597473866383</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004">
+      <created>1597482622389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597482622389</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,9 +118,14 @@
     <MESSAGE value="style.css Added" />
     <MESSAGE value="UI Is Ready" />
     <MESSAGE value="Submit Button's Font Changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Submit Button's Font Changed" />
+    <MESSAGE value="New Feature: Add items to the list" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Feature: Add items to the list" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog" timestamp="1597482956356">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1597482956356" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1597472234518">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -123,9 +134,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597472243648" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1597473871852">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1597482624400">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1597473871852" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1597482624400" />
   </component>
 </project>
