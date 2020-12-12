@@ -1,5 +1,7 @@
 const cafeList = document.getElementById('cafe-list');
+const form = document.getElementById('add-cafe-form');
 
+//Create and render Cafe
 function renderCafe(doc) {
   let li = document.createElement('li');
   let name = document.createElement('span');
@@ -20,3 +22,13 @@ db.collection('cafes')
       renderCafe(doc);
     });
   });
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  db.collection('cafes').add({
+    name: form.name.value,
+    city: form.city.value,
+  });
+  form.name.value = '';
+  form.city.value = '';
+});
