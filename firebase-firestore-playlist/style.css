@@ -52,7 +52,7 @@ li span:nth-child(2) {
   color: #999;
 }
 
-li div {
+li i {
   position: absolute;
   top: 0;
   right: 0px;

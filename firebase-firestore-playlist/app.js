@@ -6,13 +6,25 @@ function renderCafe(doc) {
   let li = document.createElement('li');
   let name = document.createElement('span');
   let city = document.createElement('span');
+  let cross = document.createElement('i');
+  cross.className = 'fas fa-trash';
 
   li.setAttribute('data-id', doc.id);
   name.textContent = `${doc.data().name}`;
   city.textContent = `${doc.data().city}`;
+
   li.appendChild(name);
   li.appendChild(city);
+  li.appendChild(cross);
+
   cafeList.appendChild(li);
+
+  //Delete li from ul
+  cross.addEventListener('click', (e) => {
+    e.stopPropagation();
+    let id = e.target.parentElement.getAttribute('data-id');
+    db.collection('cafes').doc(id).delete();
+  });
 }
 
 db.collection('cafes')
@@ -23,6 +35,7 @@ db.collection('cafes')
     });
   });
 
+//Add item to FireStore
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   db.collection('cafes').add({
