@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
     <title>Cloud Cafe</title>
   </head>
   <body>
@@ -14,6 +17,23 @@
       </form>
     </div>
 
+    <!-- Firebase -->
+
+    <script>
+      var firebaseConfig = {
+        apiKey: 'AIzaSyAryPP9E8It5ZnEJ4kwxrxJXWY4CFoHkTg',
+        authDomain: 'js-cloud-cafe.firebaseapp.com',
+        projectId: 'js-cloud-cafe',
+        storageBucket: 'js-cloud-cafe.appspot.com',
+        messagingSenderId: '1057664545816',
+        appId: '1:1057664545816:web:c01aeab246fc23d52c7f6d',
+        measurementId: 'G-5JSHJBB3W5',
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+      console.log(db);
+    </script>
     <script src="./app.js"></script>
   </body>
 </html>
