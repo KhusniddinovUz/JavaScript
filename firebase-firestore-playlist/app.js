@@ -27,13 +27,16 @@ function renderCafe(doc) {
   });
 }
 
-db.collection('cafes')
-  .get()
-  .then((snapshot) => {
-    snapshot.docs.forEach((doc) => {
-      renderCafe(doc);
-    });
-  });
+//Get Data
+// db.collection('cafes')
+//   //   .where('city', '==', 'Madrid')
+//   //   .orderBy('name')
+//   .get()
+//   .then((snapshot) => {
+//     snapshot.docs.forEach((doc) => {
+//       renderCafe(doc);
+//     });
+//   });
 
 //Add item to FireStore
 form.addEventListener('submit', (e) => {
@@ -45,3 +48,18 @@ form.addEventListener('submit', (e) => {
   form.name.value = '';
   form.city.value = '';
 });
+
+// Real-time listener
+db.collection('cafes')
+  .orderBy('city')
+  .onSnapshot((snapshot) => {
+    let changes = snapshot.docChanges();
+    changes.forEach((change) => {
+      if (change.type === 'added') {
+        renderCafe(change.doc);
+      } else if (change.type == 'removed') {
+        let li = cafeList.querySelector(`[data-id=${change.doc.id}]`);
+        cafeList.removeChild(li);
+      }
+    });
+  });
